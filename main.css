@@ -1,0 +1,204 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+body{
+    background-color: #fae6cd;
+
+
+
+/*
+    para o firefox
+    scrollbar-width: thin;          
+    scrollbar-color: #00000000 #fae6cd;   
+*/
+}
+
+/*Para o google chrome*/
+body::-webkit-scrollbar {
+    width: 10px;           
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fab379;   
+    border-radius: 10px;      
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.containerFlex{
+    display: flex;
+}
+
+header{
+    background-color: #f1ae78d3;
+    padding: 18px;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container{
+    justify-content: space-around;
+    align-items: center;
+}
+
+section{
+    margin: 20px;
+}
+
+nav {
+    background-color: #9c6131d3;
+    margin-top: 16px;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+nav li a{
+
+    color:#fff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    font-weight: bolder;
+}
+
+.menu{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.carrosel img {
+    width: 900px; 
+    height: 600px;
+    object-fit: cover;
+}
+
+#sobre{
+    margin-top: 30px;
+    padding: 55px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+section p {
+    text-align: justify;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    max-width: 400px;
+    margin: 20px;
+}
+
+button{
+    width: 16000;
+    width: 100%;
+    display: block;
+    padding: 8px ;
+    border: none;
+    background-color: rgb(255, 198, 92);
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover{
+    font-weight: 400;
+}
+
+.formCampo{
+    margin-bottom: 16px;
+}
+
+.formCampo label{
+    font-weight: bold;
+}
+
+.formCampo input,
+.formCampo textarea{
+    width: 100%;
+    padding: 8px;
+}
+
+.formCampo textarea{
+    resize: none;
+    height: 120px;
+}
+
+
+footer{
+    padding: 15px 0;
+    background-color: #83522a;
+    color: #fff;
+}
+
+
+footer > .containerFlex{
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+footer li img:hover{
+    height: 33px;
+}
